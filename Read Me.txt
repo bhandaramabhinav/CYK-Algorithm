@@ -1,0 +1,55 @@
+/--- CYK Algorithm ---/
+Programming Language Used: Java.
+1. Files:
+	Grammar.txt: grammar input.
+	Strings.txt: strings input.
+	StringResults.txt: Output file i.e. providing a list of strings and printing if they pass or not.
+
+2. Rules to be considered while providing grammar and strings input:
+	a. Single rule per line i.e. S: AB and not S: AB|TA
+	b. Rules of the format LHS:RHS
+	c. Strings should be one string input per line.
+	d. Format: w=string input.
+	c. If a string with characters out of the set of alphabet is given the output is invalid string
+
+3. Sample Output:
+	Gammar:
+		S:TA
+		S:BA
+		S:AB
+		S:b
+		A:AC
+		A:a
+		T:AB
+		B:b
+		C:a
+	Strings:
+		w=aaabaa
+		w=baaaaaaaaaa
+		w=aaaaaaaba
+		w=aaaaaaaaaaaaaaaaaab
+		w=b
+		w=baaab
+		w=ababababababababab
+		w=bbbbbbbbbbbbbbb
+		w=aaaaaaaaaaaaaaa
+		w=babababababababa
+		w=caaabaa
+	Output:
+		Grammar Description: 
+		Terminal Rules: {a=[A, C], b=[S, B]}
+		Non Terminal Rules: {AB=[S, T], AC=[A], TA=[S], BA=[S]}
+		Input Strings: 
+		Strings=[aaabaa, baaaaaaaaaa, aaaaaaaba, aaaaaaaaaaaaaaaaaab, b, baaab, ababababababababab, bbbbbbbbbbbbbbb, aaaaaaaaaaaaaaa, babababababababa]
+		Output: 
+		aaabaa: Accepted
+		baaaaaaaaaa: Accepted
+		aaaaaaaba: Accepted
+		aaaaaaaaaaaaaaaaaab: Accepted
+		b: Accepted
+		baaab: Not Accepted
+		ababababababababab: Not Accepted
+		bbbbbbbbbbbbbbb: Not Accepted
+		aaaaaaaaaaaaaaa: Not Accepted
+		babababababababa: Not Accepted
+		caaabaa: Invalid String

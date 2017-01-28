@@ -1,0 +1,17 @@
+Grammar Description: 
+Terminal Rules: {a=[A, C], b=[S, B]}
+Non Terminal Rules: {AB=[S, T], AC=[A], TA=[S], BA=[S]}
+Input Strings: 
+Strings=[aaabaa, baaaaaaaaaa, aaaaaaaba, aaaaaaaaaaaaaaaaaab, b, baaab, ababababababababab, bbbbbbbbbbbbbbb, aaaaaaaaaaaaaaa, babababababababa, caaabaa]
+Output: 
+aaabaa: Accepted
+baaaaaaaaaa: Accepted
+aaaaaaaba: Accepted
+aaaaaaaaaaaaaaaaaab: Accepted
+b: Accepted
+baaab: Not Accepted
+ababababababababab: Not Accepted
+bbbbbbbbbbbbbbb: Not Accepted
+aaaaaaaaaaaaaaa: Not Accepted
+babababababababa: Not Accepted
+caaabaa: Invalid String

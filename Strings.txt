@@ -1,0 +1,11 @@
+w=aaabaa
+w=baaaaaaaaaa
+w=aaaaaaaba
+w=aaaaaaaaaaaaaaaaaab
+w=b
+w=baaab
+w=ababababababababab
+w=bbbbbbbbbbbbbbb
+w=aaaaaaaaaaaaaaa
+w=babababababababa
+w=caaabaa

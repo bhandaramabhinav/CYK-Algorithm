@@ -1,0 +1,9 @@
+S:TA
+S:BA
+S:AB
+S:b
+A:AC
+A:a
+T:AB
+B:b
+C:a
